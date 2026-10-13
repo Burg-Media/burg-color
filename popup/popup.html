@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Burg Color</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <img src="../images/icon_32.png" alt="" width="24" height="24" />
+      <div class="pt"><strong>Burg Color</strong><span class="host" data-i18n="popupSubtitle"></span></div>
+    </header>
+
+    <div class="actions">
+      <button class="action primary" id="pick">
+        <span class="title" data-i18n="actionPick"></span>
+        <span class="sub">Alt+Shift+C</span>
+      </button>
+      <button class="action" id="analyze">
+        <span class="title" data-i18n="actionAnalyze"></span>
+        <span class="sub" data-i18n="actionAnalyzeSub"></span>
+      </button>
+      <button class="action" id="tools">
+        <span class="title" data-i18n="actionTools"></span>
+        <span class="sub" data-i18n="actionToolsSub"></span>
+      </button>
+    </div>
+
+    <p id="error" class="error" hidden></p>
+
+    <section id="analysis" hidden>
+      <h2><span data-i18n="analysisTitle"></span> <span id="analysis-meta" class="muted"></span></h2>
+      <p class="muted small" data-i18n="analysisHint"></p>
+      <div id="analysis-groups"></div>
+    </section>
+
+    <section id="current-section" hidden>
+      <h2 data-i18n="lastColor"></h2>
+      <div class="current">
+        <div class="big-swatch checker"><div id="current-swatch"></div></div>
+        <div id="current-formats" class="formats"></div>
+      </div>
+    </section>
+
+    <section id="history-section" hidden>
+      <h2>
+        <span data-i18n="historyTitle"></span>
+        <a href="../tools/tools.html#paletten" target="_blank" class="more" data-i18n="historyAll"></a>
+      </h2>
+      <div id="history" class="swatches"></div>
+    </section>
+
+    <footer>
+      <label>
+        <span data-i18n="copyAs"></span>
+        <select id="format"></select>
+      </label>
+      <label class="check"><input type="checkbox" id="upper" /> <span data-i18n="hexUpper"></span></label>
+      <a href="chrome://extensions/shortcuts" id="shortcuts" data-i18n="shortcuts"></a>
+    </footer>
+
+    <p class="made-by"><span data-i18n="madeBy"></span> <a href="https://burgmedia.eu/?utm_source=burg-color&amp;utm_medium=extension&amp;utm_campaign=popup" target="_blank" rel="noopener">Burg Media</a></p>
+
+    <div id="toast" class="toast" hidden></div>
+
+    <script src="../lib/i18n.js"></script>
+    <script src="../lib/color.js"></script>
+    <script src="../lib/store.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

@@ -1,0 +1,389 @@
+{
+  "lang": {
+    "message": "nl"
+  },
+  "extName": {
+    "message": "Burg Color"
+  },
+  "extDescription": {
+    "message": "Pipet met loep, kleurkiezer, contrastcheck, kleuranalyse van de pagina, gradiënten en paletten. Lokaal, geen account, geen tracking."
+  },
+  "cmdPick": {
+    "message": "Kleur kiezen op de pagina"
+  },
+  "errPickerBlocked": {
+    "message": "Op deze pagina mag de pipet niet werken (bijv. chrome:// of de Web Store)."
+  },
+  "errTabInactive": {
+    "message": "Tab is niet meer actief."
+  },
+  "errNoCapture": {
+    "message": "Geen schermafbeelding ontvangen."
+  },
+  "pickerFailed": {
+    "message": "Pipet werkt hier niet: {0}"
+  },
+  "hintPick": {
+    "message": "Klik om te kiezen"
+  },
+  "hintShiftClick": {
+    "message": "+klik: meerdere"
+  },
+  "hintStop": {
+    "message": "stoppen"
+  },
+  "copied": {
+    "message": "{0} gekopieerd"
+  },
+  "copyFailedValue": {
+    "message": "{0} (kopiëren mislukt)"
+  },
+  "copyFailed": {
+    "message": "Kopiëren mislukt"
+  },
+  "fmtHexBare": {
+    "message": "HEX zonder #"
+  },
+  "popupSubtitle": {
+    "message": "Pipet · analyse · paletten"
+  },
+  "actionPick": {
+    "message": "Kleur kiezen op pagina"
+  },
+  "actionAnalyze": {
+    "message": "Kleuren van deze pagina"
+  },
+  "actionAnalyzeSub": {
+    "message": "Analyse"
+  },
+  "actionTools": {
+    "message": "Kleurkiezer & gradiënt"
+  },
+  "actionToolsSub": {
+    "message": "Pipet hele scherm"
+  },
+  "analysisTitle": {
+    "message": "Kleuren op deze pagina"
+  },
+  "analysisHint": {
+    "message": "Klik: kopiëren en aanwijzen op de pagina."
+  },
+  "analysisMeta": {
+    "message": "{0} kleuren · {1}{2} elementen"
+  },
+  "lastColor": {
+    "message": "Laatste kleur"
+  },
+  "historyTitle": {
+    "message": "Geschiedenis"
+  },
+  "historyAll": {
+    "message": "Alles"
+  },
+  "copyAs": {
+    "message": "Kopieer als"
+  },
+  "hexUpper": {
+    "message": "HEX hoofdletters"
+  },
+  "shortcuts": {
+    "message": "Sneltoetsen"
+  },
+  "madeBy": {
+    "message": "Gemaakt door"
+  },
+  "copyTitle": {
+    "message": "Kopiëren"
+  },
+  "swatchCopyTitle": {
+    "message": "{0}: klik om te kopiëren"
+  },
+  "pickStartFailed": {
+    "message": "Pipet starten mislukt."
+  },
+  "groupBackground": {
+    "message": "Achtergronden"
+  },
+  "groupText": {
+    "message": "Tekst"
+  },
+  "groupBorder": {
+    "message": "Randen"
+  },
+  "groupSvg": {
+    "message": "SVG / iconen"
+  },
+  "cssVariables": {
+    "message": "CSS-variabelen"
+  },
+  "varColorCopyTitle": {
+    "message": "{0}: kleur kopiëren"
+  },
+  "varCopyTitle": {
+    "message": "var({0}) kopiëren"
+  },
+  "skippedSheets": {
+    "message": "{0} stylesheet(s) van een ander domein niet leesbaar voor variabelen."
+  },
+  "analyzeFailed": {
+    "message": "Deze pagina kan niet geanalyseerd worden (bijv. chrome:// of de Web Store)."
+  },
+  "tabPicker": {
+    "message": "Kleurkiezer"
+  },
+  "tabGradient": {
+    "message": "Gradiënt"
+  },
+  "tabPalettes": {
+    "message": "Geschiedenis & paletten"
+  },
+  "ariaSv": {
+    "message": "Verzadiging en helderheid"
+  },
+  "ariaHue": {
+    "message": "Tint"
+  },
+  "opacity": {
+    "message": "Dekking"
+  },
+  "eyedropperScreen": {
+    "message": "Pipet: kies overal op het scherm"
+  },
+  "palette": {
+    "message": "Palet"
+  },
+  "addToPalette": {
+    "message": "+ Aan palet"
+  },
+  "contrastTitle": {
+    "message": "Contrast (WCAG 2)"
+  },
+  "contrastText": {
+    "message": "Tekst"
+  },
+  "swap": {
+    "message": "Omwisselen"
+  },
+  "background": {
+    "message": "Achtergrond"
+  },
+  "ariaBgPick": {
+    "message": "Achtergrondkleur kiezen"
+  },
+  "previewLarge": {
+    "message": "Grote tekst Aa"
+  },
+  "previewNormal": {
+    "message": "Normale tekst: de snelle bruine vos springt over de luie hond."
+  },
+  "chkAaNormal": {
+    "message": "AA normale tekst"
+  },
+  "chkAaLarge": {
+    "message": "AA grote tekst"
+  },
+  "chkAaaNormal": {
+    "message": "AAA normale tekst"
+  },
+  "chkAaaLarge": {
+    "message": "AAA grote tekst"
+  },
+  "chkUi": {
+    "message": "UI-elementen"
+  },
+  "variantsTitle": {
+    "message": "Varianten"
+  },
+  "shadesTitle": {
+    "message": "Lichter → donkerder"
+  },
+  "hComplementary": {
+    "message": "Complementair"
+  },
+  "hSplit": {
+    "message": "Split-complementair"
+  },
+  "hAnalogous": {
+    "message": "Analoog"
+  },
+  "hTriadic": {
+    "message": "Triadisch"
+  },
+  "hTetradic": {
+    "message": "Tetradisch"
+  },
+  "copyButton": {
+    "message": "Kopieer"
+  },
+  "confirm": {
+    "message": "Zeker weten?"
+  },
+  "paletteName": {
+    "message": "Palet {0}"
+  },
+  "untitled": {
+    "message": "Naamloos"
+  },
+  "newPaletteOption": {
+    "message": "Nieuw palet…"
+  },
+  "addedTo": {
+    "message": "Toegevoegd aan {0}"
+  },
+  "gBarTitle": {
+    "message": "Klik om een kleurstop toe te voegen"
+  },
+  "settingsTitle": {
+    "message": "Instellingen"
+  },
+  "gType": {
+    "message": "Type"
+  },
+  "gLinear": {
+    "message": "Lineair"
+  },
+  "gRadial": {
+    "message": "Radiaal"
+  },
+  "gConic": {
+    "message": "Conisch"
+  },
+  "gAngle": {
+    "message": "Hoek"
+  },
+  "gShape": {
+    "message": "Vorm"
+  },
+  "gCircle": {
+    "message": "Cirkel"
+  },
+  "gEllipse": {
+    "message": "Ellips"
+  },
+  "gCenter": {
+    "message": "Midden"
+  },
+  "posCenter": {
+    "message": "Midden"
+  },
+  "posTop": {
+    "message": "Boven"
+  },
+  "posBottom": {
+    "message": "Onder"
+  },
+  "posLeft": {
+    "message": "Links"
+  },
+  "posRight": {
+    "message": "Rechts"
+  },
+  "posTopLeft": {
+    "message": "Linksboven"
+  },
+  "posTopRight": {
+    "message": "Rechtsboven"
+  },
+  "posBottomLeft": {
+    "message": "Linksonder"
+  },
+  "posBottomRight": {
+    "message": "Rechtsonder"
+  },
+  "stopsTitle": {
+    "message": "Kleurstops"
+  },
+  "stopsNote": {
+    "message": "kleur · dekking · positie"
+  },
+  "gAdd": {
+    "message": "+ Stop"
+  },
+  "gUseCurrent": {
+    "message": "Kleur uit kiezer op gekozen stop"
+  },
+  "gReverse": {
+    "message": "Omdraaien"
+  },
+  "presetsTitle": {
+    "message": "Voorbeelden"
+  },
+  "gCopy": {
+    "message": "Kopieer CSS"
+  },
+  "gCopyValue": {
+    "message": "Alleen de gradiënt"
+  },
+  "gradientLabel": {
+    "message": "Gradiënt"
+  },
+  "pasteTitle": {
+    "message": "Plakken"
+  },
+  "pasteBefore": {
+    "message": "Plak een bestaande"
+  },
+  "pasteOr": {
+    "message": "of"
+  },
+  "pasteAfter": {
+    "message": "om hem te bewerken."
+  },
+  "errNoGradient": {
+    "message": "Geen linear-, radial- of conic-gradient gevonden."
+  },
+  "errStops": {
+    "message": "Kleurstops niet herkend."
+  },
+  "pickColor": {
+    "message": "Kleur kiezen"
+  },
+  "position": {
+    "message": "Positie"
+  },
+  "removeStop": {
+    "message": "Stop verwijderen"
+  },
+  "historyCopy": {
+    "message": "Kopieer als lijst"
+  },
+  "clear": {
+    "message": "Wissen"
+  },
+  "historyHint": {
+    "message": "Klik op een kleur om hem in de kleurkiezer te openen."
+  },
+  "historyEmpty": {
+    "message": "Nog geen kleuren gekozen."
+  },
+  "historyCount": {
+    "message": "{0} kleuren"
+  },
+  "myPalettes": {
+    "message": "Mijn paletten"
+  },
+  "paletteNew": {
+    "message": "+ Nieuw palet"
+  },
+  "palettesEmpty": {
+    "message": "Nog geen paletten. Maak er een aan, of voeg in de kleurkiezer een kleur toe met “+ Aan palet”."
+  },
+  "chipTitle": {
+    "message": "{0}: openen in kleurkiezer"
+  },
+  "remove": {
+    "message": "Verwijderen"
+  },
+  "delete": {
+    "message": "Verwijderen"
+  },
+  "paletteNameAria": {
+    "message": "Naam van het palet"
+  },
+  "addFromPicker": {
+    "message": "+ Kleur uit kiezer"
+  },
+  "paletteEmpty": {
+    "message": "Nog leeg."
+  }
+}

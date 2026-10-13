@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Burg Color</title>
+    <link rel="icon" href="../images/icon_32.png" />
+    <link rel="stylesheet" href="tools.css" />
+  </head>
+  <body>
+    <header class="top">
+      <div class="brand">
+        <img src="../images/icon_32.png" alt="" width="24" height="24" />
+        <strong>Burg Color</strong>
+      </div>
+      <nav class="tabs" role="tablist">
+        <button role="tab" data-tab="kiezer" data-i18n="tabPicker"></button>
+        <button role="tab" data-tab="gradient" data-i18n="tabGradient"></button>
+        <button role="tab" data-tab="paletten" data-i18n="tabPalettes"></button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ------------------------------------------------------------------ -->
+      <section id="tab-kiezer" class="tab" hidden>
+        <div class="picker-layout">
+          <div class="card picker">
+            <div id="sv" class="sv" tabindex="0" data-i18n-aria-label="ariaSv"><div id="sv-handle" class="handle"></div></div>
+            <input type="range" id="hue" class="slider hue" min="0" max="360" step="1" data-i18n-aria-label="ariaHue" />
+            <input type="range" id="alpha" class="slider alpha" min="0" max="100" step="1" data-i18n-aria-label="opacity" />
+          </div>
+
+          <div class="card values">
+            <div class="preview-row">
+              <div class="preview checker"><div id="preview"></div></div>
+              <div class="preview-actions">
+                <button id="eyedropper" class="btn primary" hidden data-i18n="eyedropperScreen"></button>
+                <div class="inline">
+                  <select id="palette-select" data-i18n-aria-label="palette"></select>
+                  <button id="add-to-palette" class="btn" data-i18n="addToPalette"></button>
+                </div>
+              </div>
+            </div>
+            <div id="format-rows" class="format-rows"></div>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h2 data-i18n="contrastTitle"></h2>
+            <div class="contrast-inputs">
+              <label><span data-i18n="contrastText"></span> <span class="mini-swatch" id="fg-swatch"></span><code id="fg-value"></code></label>
+              <button id="swap" class="btn icon" data-i18n-title="swap">⇄</button>
+              <label>
+                <span data-i18n="background"></span>
+                <input type="color" id="bg-native" data-i18n-aria-label="ariaBgPick" />
+                <input type="text" id="bg-input" class="text-input" value="#ffffff" spellcheck="false" />
+              </label>
+            </div>
+            <div id="contrast-preview" class="contrast-preview">
+              <span class="large" data-i18n="previewLarge"></span>
+              <span data-i18n="previewNormal"></span>
+            </div>
+            <div class="contrast-result">
+              <strong id="ratio"></strong>
+              <ul id="checks" class="checks"></ul>
+            </div>
+          </div>
+
+          <div class="card">
+            <h2 data-i18n="variantsTitle"></h2>
+            <h3 data-i18n="shadesTitle"></h3>
+            <div id="shades" class="strip"></div>
+            <div id="harmonies"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ------------------------------------------------------------------ -->
+      <section id="tab-gradient" class="tab" hidden>
+        <div class="card">
+          <div class="gradient-preview checker"><div id="g-preview"></div></div>
+          <div id="g-bar" class="g-bar checker" data-i18n-title="gBarTitle">
+            <div id="g-bar-fill"></div>
+            <div id="g-markers"></div>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h2 data-i18n="settingsTitle"></h2>
+            <div class="form-grid">
+              <label>
+                <span data-i18n="gType"></span>
+                <select id="g-type">
+                  <option value="linear" data-i18n="gLinear"></option>
+                  <option value="radial" data-i18n="gRadial"></option>
+                  <option value="conic" data-i18n="gConic"></option>
+                </select>
+              </label>
+              <label id="g-angle-row">
+                <span data-i18n="gAngle"></span>
+                <span class="inline">
+                  <input type="range" id="g-angle" min="0" max="360" step="1" />
+                  <input type="number" id="g-angle-num" min="0" max="360" class="num" />°
+                </span>
+              </label>
+              <label id="g-shape-row">
+                <span data-i18n="gShape"></span>
+                <select id="g-shape">
+                  <option value="circle" data-i18n="gCircle"></option>
+                  <option value="ellipse" data-i18n="gEllipse"></option>
+                </select>
+              </label>
+              <label id="g-pos-row">
+                <span data-i18n="gCenter"></span>
+                <select id="g-pos">
+                  <option value="center" data-i18n="posCenter"></option>
+                  <option value="top" data-i18n="posTop"></option>
+                  <option value="bottom" data-i18n="posBottom"></option>
+                  <option value="left" data-i18n="posLeft"></option>
+                  <option value="right" data-i18n="posRight"></option>
+                  <option value="top left" data-i18n="posTopLeft"></option>
+                  <option value="top right" data-i18n="posTopRight"></option>
+                  <option value="bottom left" data-i18n="posBottomLeft"></option>
+                  <option value="bottom right" data-i18n="posBottomRight"></option>
+                </select>
+              </label>
+            </div>
+
+            <h2><span data-i18n="stopsTitle"></span> <span class="h2-note" data-i18n="stopsNote"></span></h2>
+            <div id="g-stops" class="stops"></div>
+            <div class="inline">
+              <button id="g-add" class="btn" data-i18n="gAdd"></button>
+              <button id="g-use-current" class="btn" data-i18n="gUseCurrent"></button>
+              <button id="g-reverse" class="btn" data-i18n="gReverse"></button>
+            </div>
+
+            <h2 data-i18n="presetsTitle"></h2>
+            <div id="g-presets" class="presets"></div>
+          </div>
+
+          <div class="card">
+            <h2>CSS</h2>
+            <pre id="g-css" class="code"></pre>
+            <div class="inline">
+              <button id="g-copy" class="btn primary" data-i18n="gCopy"></button>
+              <button id="g-copy-value" class="btn" data-i18n="gCopyValue"></button>
+            </div>
+            <h2 data-i18n="pasteTitle"></h2>
+            <p class="muted"><span data-i18n="pasteBefore"></span> <code>linear-</code>, <code>radial-</code> <span data-i18n="pasteOr"></span> <code>conic-gradient(…)</code> <span data-i18n="pasteAfter"></span></p>
+            <textarea id="g-import" class="text-area" rows="3" spellcheck="false" placeholder="linear-gradient(90deg, #ff512f 0%, #dd2476 100%)"></textarea>
+            <p id="g-import-error" class="error" hidden></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ------------------------------------------------------------------ -->
+      <section id="tab-paletten" class="tab" hidden>
+        <div class="card">
+          <div class="card-head">
+            <h2 data-i18n="historyTitle"></h2>
+            <div class="inline">
+              <button id="history-copy" class="btn" data-i18n="historyCopy"></button>
+              <button id="history-clear" class="btn danger" data-i18n="clear"></button>
+            </div>
+          </div>
+          <p class="muted" data-i18n="historyHint"></p>
+          <div id="history" class="swatch-grid"></div>
+          <p id="history-empty" class="muted" hidden data-i18n="historyEmpty"></p>
+        </div>
+
+        <div class="card">
+          <div class="card-head">
+            <h2 data-i18n="myPalettes"></h2>
+            <button id="palette-new" class="btn" data-i18n="paletteNew"></button>
+          </div>
+          <div id="palettes" class="palettes"></div>
+          <p id="palettes-empty" class="muted" hidden data-i18n="palettesEmpty"></p>
+        </div>
+      </section>
+    </main>
+
+    <div id="toast" class="toast" hidden></div>
+
+    <script src="../lib/i18n.js"></script>
+    <script src="../lib/color.js"></script>
+    <script src="../lib/store.js"></script>
+    <script src="tools.js"></script>
+  </body>
+</html>

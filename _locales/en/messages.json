@@ -1,0 +1,389 @@
+{
+  "lang": {
+    "message": "en"
+  },
+  "extName": {
+    "message": "Burg Color"
+  },
+  "extDescription": {
+    "message": "Eyedropper with magnifier, color picker, WCAG contrast check, page color analysis, gradients and palettes. Local, no tracking."
+  },
+  "cmdPick": {
+    "message": "Pick a color on the page"
+  },
+  "errPickerBlocked": {
+    "message": "The eyedropper can't run on this page (for example chrome:// pages or the Web Store)."
+  },
+  "errTabInactive": {
+    "message": "The tab is no longer active."
+  },
+  "errNoCapture": {
+    "message": "No screenshot received."
+  },
+  "pickerFailed": {
+    "message": "The eyedropper doesn't work here: {0}"
+  },
+  "hintPick": {
+    "message": "Click to pick"
+  },
+  "hintShiftClick": {
+    "message": "+click: several"
+  },
+  "hintStop": {
+    "message": "stop"
+  },
+  "copied": {
+    "message": "{0} copied"
+  },
+  "copyFailedValue": {
+    "message": "{0} (copy failed)"
+  },
+  "copyFailed": {
+    "message": "Copy failed"
+  },
+  "fmtHexBare": {
+    "message": "HEX without #"
+  },
+  "popupSubtitle": {
+    "message": "Eyedropper · analysis · palettes"
+  },
+  "actionPick": {
+    "message": "Pick color on page"
+  },
+  "actionAnalyze": {
+    "message": "Colors on this page"
+  },
+  "actionAnalyzeSub": {
+    "message": "Analysis"
+  },
+  "actionTools": {
+    "message": "Color picker & gradient"
+  },
+  "actionToolsSub": {
+    "message": "Screen-wide eyedropper"
+  },
+  "analysisTitle": {
+    "message": "Colors on this page"
+  },
+  "analysisHint": {
+    "message": "Click: copy and highlight on the page."
+  },
+  "analysisMeta": {
+    "message": "{0} colors · {1}{2} elements"
+  },
+  "lastColor": {
+    "message": "Last color"
+  },
+  "historyTitle": {
+    "message": "History"
+  },
+  "historyAll": {
+    "message": "All"
+  },
+  "copyAs": {
+    "message": "Copy as"
+  },
+  "hexUpper": {
+    "message": "Uppercase HEX"
+  },
+  "shortcuts": {
+    "message": "Shortcuts"
+  },
+  "madeBy": {
+    "message": "Made by"
+  },
+  "copyTitle": {
+    "message": "Copy"
+  },
+  "swatchCopyTitle": {
+    "message": "{0}: click to copy"
+  },
+  "pickStartFailed": {
+    "message": "Couldn't start the eyedropper."
+  },
+  "groupBackground": {
+    "message": "Backgrounds"
+  },
+  "groupText": {
+    "message": "Text"
+  },
+  "groupBorder": {
+    "message": "Borders"
+  },
+  "groupSvg": {
+    "message": "SVG / icons"
+  },
+  "cssVariables": {
+    "message": "CSS variables"
+  },
+  "varColorCopyTitle": {
+    "message": "{0}: copy color"
+  },
+  "varCopyTitle": {
+    "message": "Copy var({0})"
+  },
+  "skippedSheets": {
+    "message": "{0} stylesheet(s) from another domain can't be read for variables."
+  },
+  "analyzeFailed": {
+    "message": "This page can't be analyzed (for example chrome:// pages or the Web Store)."
+  },
+  "tabPicker": {
+    "message": "Color picker"
+  },
+  "tabGradient": {
+    "message": "Gradient"
+  },
+  "tabPalettes": {
+    "message": "History & palettes"
+  },
+  "ariaSv": {
+    "message": "Saturation and brightness"
+  },
+  "ariaHue": {
+    "message": "Hue"
+  },
+  "opacity": {
+    "message": "Opacity"
+  },
+  "eyedropperScreen": {
+    "message": "Eyedropper: pick anywhere on screen"
+  },
+  "palette": {
+    "message": "Palette"
+  },
+  "addToPalette": {
+    "message": "+ Add to palette"
+  },
+  "contrastTitle": {
+    "message": "Contrast (WCAG 2)"
+  },
+  "contrastText": {
+    "message": "Text"
+  },
+  "swap": {
+    "message": "Swap"
+  },
+  "background": {
+    "message": "Background"
+  },
+  "ariaBgPick": {
+    "message": "Choose background color"
+  },
+  "previewLarge": {
+    "message": "Large text Aa"
+  },
+  "previewNormal": {
+    "message": "Normal text: the quick brown fox jumps over the lazy dog."
+  },
+  "chkAaNormal": {
+    "message": "AA normal text"
+  },
+  "chkAaLarge": {
+    "message": "AA large text"
+  },
+  "chkAaaNormal": {
+    "message": "AAA normal text"
+  },
+  "chkAaaLarge": {
+    "message": "AAA large text"
+  },
+  "chkUi": {
+    "message": "UI components"
+  },
+  "variantsTitle": {
+    "message": "Variants"
+  },
+  "shadesTitle": {
+    "message": "Lighter → darker"
+  },
+  "hComplementary": {
+    "message": "Complementary"
+  },
+  "hSplit": {
+    "message": "Split complementary"
+  },
+  "hAnalogous": {
+    "message": "Analogous"
+  },
+  "hTriadic": {
+    "message": "Triadic"
+  },
+  "hTetradic": {
+    "message": "Tetradic"
+  },
+  "copyButton": {
+    "message": "Copy"
+  },
+  "confirm": {
+    "message": "Are you sure?"
+  },
+  "paletteName": {
+    "message": "Palette {0}"
+  },
+  "untitled": {
+    "message": "Untitled"
+  },
+  "newPaletteOption": {
+    "message": "New palette…"
+  },
+  "addedTo": {
+    "message": "Added to {0}"
+  },
+  "gBarTitle": {
+    "message": "Click to add a color stop"
+  },
+  "settingsTitle": {
+    "message": "Settings"
+  },
+  "gType": {
+    "message": "Type"
+  },
+  "gLinear": {
+    "message": "Linear"
+  },
+  "gRadial": {
+    "message": "Radial"
+  },
+  "gConic": {
+    "message": "Conic"
+  },
+  "gAngle": {
+    "message": "Angle"
+  },
+  "gShape": {
+    "message": "Shape"
+  },
+  "gCircle": {
+    "message": "Circle"
+  },
+  "gEllipse": {
+    "message": "Ellipse"
+  },
+  "gCenter": {
+    "message": "Center"
+  },
+  "posCenter": {
+    "message": "Center"
+  },
+  "posTop": {
+    "message": "Top"
+  },
+  "posBottom": {
+    "message": "Bottom"
+  },
+  "posLeft": {
+    "message": "Left"
+  },
+  "posRight": {
+    "message": "Right"
+  },
+  "posTopLeft": {
+    "message": "Top left"
+  },
+  "posTopRight": {
+    "message": "Top right"
+  },
+  "posBottomLeft": {
+    "message": "Bottom left"
+  },
+  "posBottomRight": {
+    "message": "Bottom right"
+  },
+  "stopsTitle": {
+    "message": "Color stops"
+  },
+  "stopsNote": {
+    "message": "color · opacity · position"
+  },
+  "gAdd": {
+    "message": "+ Stop"
+  },
+  "gUseCurrent": {
+    "message": "Use picker color on selected stop"
+  },
+  "gReverse": {
+    "message": "Reverse"
+  },
+  "presetsTitle": {
+    "message": "Presets"
+  },
+  "gCopy": {
+    "message": "Copy CSS"
+  },
+  "gCopyValue": {
+    "message": "Gradient only"
+  },
+  "gradientLabel": {
+    "message": "Gradient"
+  },
+  "pasteTitle": {
+    "message": "Paste"
+  },
+  "pasteBefore": {
+    "message": "Paste an existing"
+  },
+  "pasteOr": {
+    "message": "or"
+  },
+  "pasteAfter": {
+    "message": "to edit it."
+  },
+  "errNoGradient": {
+    "message": "No linear-, radial- or conic-gradient found."
+  },
+  "errStops": {
+    "message": "Color stops not recognized."
+  },
+  "pickColor": {
+    "message": "Choose color"
+  },
+  "position": {
+    "message": "Position"
+  },
+  "removeStop": {
+    "message": "Remove stop"
+  },
+  "historyCopy": {
+    "message": "Copy as list"
+  },
+  "clear": {
+    "message": "Clear"
+  },
+  "historyHint": {
+    "message": "Click a color to open it in the color picker."
+  },
+  "historyEmpty": {
+    "message": "No colors picked yet."
+  },
+  "historyCount": {
+    "message": "{0} colors"
+  },
+  "myPalettes": {
+    "message": "My palettes"
+  },
+  "paletteNew": {
+    "message": "+ New palette"
+  },
+  "palettesEmpty": {
+    "message": "No palettes yet. Create one, or add a color in the color picker with “+ Add to palette”."
+  },
+  "chipTitle": {
+    "message": "{0}: open in color picker"
+  },
+  "remove": {
+    "message": "Remove"
+  },
+  "delete": {
+    "message": "Delete"
+  },
+  "paletteNameAria": {
+    "message": "Palette name"
+  },
+  "addFromPicker": {
+    "message": "+ Color from picker"
+  },
+  "paletteEmpty": {
+    "message": "Empty for now."
+  }
+}
