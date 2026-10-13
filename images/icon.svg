@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-  <!-- burgmedia-stijl: tegel in de extensiekleur, vorm in inkt -->
+  <!-- Burg Media style: tile in the extension color, shape in ink -->
   <rect width="128" height="128" rx="28" fill="#8B7BF5"/>
-  <!-- druppel -->
+  <!-- drop -->
   <path d="M64 20C64 20 32 58 32 80a32 32 0 0 0 64 0C96 58 64 20 64 20Z" fill="#0E0E10"/>
   <path d="M48 80a16 16 0 0 0 12 15" fill="none" stroke="#8B7BF5" stroke-width="7" stroke-linecap="round"/>
 </svg>
